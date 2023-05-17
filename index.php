@@ -1,5 +1,13 @@
 <?php
-$passwordGenerated = ''
+$passwordGenerated = '';
+$numb = 3;
+// $_GET['numb'];
+if (array_key_exists('numb', $_GET)){
+  $numb = $_GET['numb'];
+}else{
+  var_dump('nessun valore');
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,25 +25,25 @@ $passwordGenerated = ''
   <div class="main_wrapper container-sm"">
   <div class="container-sm text-center mt-5">
 
-  <h2 >strong password generetor</h2>
-  <p>choose the number of letters</p>
+  <h1>strong password generetor</h1>
 
-  <select class="form-select" aria-label="Default select example">
-    <option selected>Open this select menu</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">7</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-    <option value="10">10</option>
-  </select>
+  <form action="index.php" method="GET">
+    <select class="form-select" aria-label="Default select example" name="numb">
+      <option selected>choose the number of letters</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <input class="mt-3" type="submit">
+    </select>
+  </form>
 
   <p class="mt-5">your generated password is:</p>
-  <p><?php echo $passwordGenerated ?></p>
+  <p><?php echo $passwordGenerated . $numb ?></p>
 
   </div>
   </div>
