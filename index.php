@@ -1,8 +1,8 @@
 <?php
-
 $numb = 0;
 if (array_key_exists('numb', $_GET)){
   $numb = $_GET['numb'];
+  var_dump('numero lettere inserito');
 }else{
   var_dump('nessun valore inserito per ora');
 }
@@ -28,7 +28,7 @@ include __DIR__ . "/functions/functions.php";
 
   <h1>strong password generetor</h1>
 
-  <form action="index.php" method="GET">
+  <form action="passGenerated.php" method="GET">
     <select class="form-select" aria-label="Default select example" name="numb">
       <option selected>choose the number of letters</option>
       <option value="3">3</option>
@@ -38,7 +38,16 @@ include __DIR__ . "/functions/functions.php";
       <option value="7">7</option>
       <option value="8">8</option>
       <option value="9">9</option>
-      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+      <option value="15">15</option>
+      <option value="16">16</option>
+      <option value="17">17</option>
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">20</option>
       <input class="mt-3" type="submit">
     </select>
   </form>

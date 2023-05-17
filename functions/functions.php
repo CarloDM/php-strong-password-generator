@@ -9,7 +9,9 @@ function genPass($numb){
   $simbolsArray = explode(' ', $simbols); /* 15 simboli*/
   $passArray = [];
 
+  // ciclo su base numero inserito
   for ($i=0; $i < $numb ; $i++) { 
+
     //selettore randomico
     $rnd = rand(1,4); 
     if($rnd === 1){
@@ -24,7 +26,6 @@ function genPass($numb){
   }
   
   return implode('',$passArray);
-  // var_dump(implode('',$passArray));
-
 }
+
 ?>
