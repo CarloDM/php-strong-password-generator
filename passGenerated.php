@@ -2,9 +2,9 @@
 // $numb = 0;
 if (array_key_exists('numb', $_GET)){
   $numb = $_GET['numb'];
-  var_dump('numero lettere inserito');
+  // var_dump('numero lettere inserito:',$numb );
 }else{
-  var_dump('nessun valore inserito per ora');
+  // var_dump('nessun valore inserito per ora');
 }
 session_start();
 

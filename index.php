@@ -4,10 +4,9 @@ if (array_key_exists('numb', $_GET)){
   $numb = $_GET['numb'];
   var_dump('numero lettere inserito');
 }else{
-  var_dump('nessun valore inserito per ora');
+  // var_dump('nessun valore inserito per ora');
 }
 include __DIR__ . "/functions/functions.php";
-
 ?>
 
 <!DOCTYPE html>
@@ -52,8 +51,8 @@ include __DIR__ . "/functions/functions.php";
     </select>
   </form>
 
-  <p class="mt-5">your generated password is:</p>
-  <p><?php echo genPass($numb)?></p>
+  <!-- <p class="mt-5">your generated password is:</p>
+  <p><?php echo genPass($numb)?></p> -->
 
   </div>
   </div>
