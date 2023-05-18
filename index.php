@@ -7,6 +7,8 @@ if (array_key_exists('numb', $_GET)){
   // var_dump('nessun valore inserito per ora');
 }
 include __DIR__ . "/functions/functions.php";
+
+// var_dump($_SERVER);
 ?>
 
 <!DOCTYPE html>

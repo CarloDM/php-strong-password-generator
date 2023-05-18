@@ -12,8 +12,9 @@ function genPass($numb){
   // ciclo su base numero inserito
   for ($i=0; $i < $numb ; $i++) { 
 
-    //selettore randomico
-    $rnd = rand(1,4); 
+    //selettore randomico_____________
+    $rnd = rand(1,4);  // :) <---     |
+    // --------------           '''''' 
     if($rnd === 1){
       array_push($passArray,$simbolsArray[rand(0, 14)]);
     }else if ($rnd === 2){
